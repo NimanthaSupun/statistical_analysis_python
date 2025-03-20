@@ -1,0 +1,10 @@
+Hypothesis Testing Results
+=========================
+
+T-test for difference in Final Scores between Genders:
+t-statistic: 0.2172
+p-value: 0.8280
+
+Chi-Square Test for Association between Internet Access at Home and Grade:
+Chi-Square Statistic: 1.6137
+p-value: 0.8063
