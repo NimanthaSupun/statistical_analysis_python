@@ -4,7 +4,7 @@ Dep. Variable:            Final_Score   R-squared:                       0.000
 Model:                            OLS   Adj. R-squared:                 -0.001
 Method:                 Least Squares   F-statistic:                    0.3149
 Date:                Thu, 20 Mar 2025   Prob (F-statistic):              0.868
-Time:                        19:14:42   Log-Likelihood:                -19115.
+Time:                        21:26:55   Log-Likelihood:                -19115.
 No. Observations:                4483   AIC:                         3.824e+04
 Df Residuals:                    4478   BIC:                         3.827e+04
 Df Model:                           4                                         
