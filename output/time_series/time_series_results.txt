@@ -1,0 +1,26 @@
+Time Series Analysis Results
+===========================
+
+Dataset Information:
+- Time Period: 2000-01-03 05:00:00+00:00 to 2025-03-17 05:00:00+00:00
+- Number of Observations: 9206
+
+Stationarity Test (ADF Test):
+- ADF Statistic: 1.4935
+- p-value: 0.9975
+- Is Stationary: No
+
+ARIMA Model Results:
+- Parameters: p=1, d=0, q=2
+- RMSE: 86.2343
+- MAE: 78.0619
+- MAPE: 45.91%
+
+SARIMA Model Results:
+- Parameters: p=1, d=1, q=1, P=1, D=1, Q=1, S=5
+- RMSE: 68.9787
+- MAE: 62.6071
+- MAPE: 37.03%
+
+Conclusion:
+Based on RMSE, the SARIMA model performs better for this dataset.
