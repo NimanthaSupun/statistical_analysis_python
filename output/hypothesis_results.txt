@@ -1,10 +1,48 @@
-Hypothesis Testing Results
-=========================
+===================================
+HYPOTHESIS TESTING RESULTS SUMMARY
+===================================
 
-T-test for difference in Final Scores between Genders:
-t-statistic: 0.2172
-p-value: 0.8280
+HYPOTHESIS 1: Gender differences in Final Scores
+--------------------------------------------------
+Null Hypothesis (H0): There is no significant difference in Final Scores between male and female students.
+Alternative Hypothesis (H1): There is a significant difference in Final Scores between male and female students.
 
-Chi-Square Test for Association between Internet Access at Home and Grade:
-Chi-Square Statistic: 1.6137
+Test: Mann-Whitney U test
+Test statistic: 3133996.0000
+p-value: 0.8401
+Median difference: -0.3600
+Conclusion: Fail to reject the null hypothesis. No significant difference in Final Scores between male and female students.
+
+HYPOTHESIS 2: Association between Internet Access and Grades
+--------------------------------------------------
+Null Hypothesis (H0): There is no association between Internet Access at Home and Grade.
+Alternative Hypothesis (H1): There is an association between Internet Access at Home and Grade.
+
+Test: Chi-Square Test of Independence
+Chi-Square statistic: 1.6137
+Degrees of freedom: 4
 p-value: 0.8063
+Conclusion: Fail to reject the null hypothesis. No significant association between Internet Access at Home and Grade.
+
+HYPOTHESIS 3: Correlation between Study Hours and Total Score
+--------------------------------------------------
+Null Hypothesis (H0): There is no correlation between Study Hours per Week and Total Score.
+Alternative Hypothesis (H1): There is a correlation between Study Hours per Week and Total Score.
+
+Test: Spearman rank correlation
+Correlation coefficient: -0.0126
+p-value: 0.3749
+Conclusion: Fail to reject the null hypothesis. No significant correlation between Study Hours per Week and Total Score.
+
+HYPOTHESIS 4: Department differences in Midterm Scores
+--------------------------------------------------
+Null Hypothesis (H0): There is no difference in Midterm Scores across departments.
+Alternative Hypothesis (H1): At least one department has different Midterm Scores.
+
+Test: Kruskal-Wallis H-test
+Test statistic: 1.8208
+p-value: 0.6104
+Conclusion: Fail to reject the null hypothesis. No significant differences in Midterm Scores between departments.
+
+
+Note: This analysis was performed on student academic performance data. The results should be interpreted in the context of educational research and might be influenced by sample characteristics, data quality, and other confounding factors.
