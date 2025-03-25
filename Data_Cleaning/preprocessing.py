@@ -33,7 +33,8 @@ def process_regular_data(df):
                 df[col] = df[col].fillna(df[col].median())  # Fill numerical columns with median
     
     print("\nMissing values handled.")
-    
+    print(df.isnull().sum())
+        
     return df
 
 def process_time_series_data(df):
