@@ -269,16 +269,6 @@ def fit_sarima_model(train, test, output_dir):
     }
 
 def calculate_mape(actual, predicted):
-    """
-    Calculate Mean Absolute Percentage Error
-    
-    Parameters:
-        actual (array-like): Actual values
-        predicted (array-like): Predicted values
-        
-    Returns:
-        float: MAPE value
-    """
     actual, predicted = np.array(actual), np.array(predicted)
     mask = actual != 0
     return np.mean(np.abs((actual[mask] - predicted[mask]) / actual[mask])) * 100
