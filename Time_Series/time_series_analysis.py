@@ -103,15 +103,7 @@ def perform_time_series_analysis(df, output_dir):
     return results
 
 def adf_test(time_series):
-    """
-    Perform Augmented Dickey-Fuller test for stationarity
-    
-    Parameters:
-        time_series (pandas.Series): The time series to test
-        
-    Returns:
-        dict: ADF test results
-    """
+  
     from statsmodels.tsa.stattools import adfuller
     
     result = adfuller(time_series.dropna())
@@ -124,17 +116,7 @@ def adf_test(time_series):
     }
 
 def fit_arima_model(train, test, output_dir):
-    """
-    Fit ARIMA model to the training data and evaluate on test data
-    
-    Parameters:
-        train (pandas.DataFrame): Training data
-        test (pandas.DataFrame): Testing data
-        output_dir (str): Directory to save outputs
-        
-    Returns:
-        dict: ARIMA model results
-    """
+  
     # Use differenced series if it exists, otherwise use original
     target_col = 'Close_diff' if 'Close_diff' in train.columns else 'Close'
     
@@ -214,17 +196,7 @@ def fit_arima_model(train, test, output_dir):
     }
 
 def fit_sarima_model(train, test, output_dir):
-    """
-    Fit SARIMA model to the training data and evaluate on test data
-    
-    Parameters:
-        train (pandas.DataFrame): Training data
-        test (pandas.DataFrame): Testing data
-        output_dir (str): Directory to save outputs
-        
-    Returns:
-        dict: SARIMA model results
-    """
+   
     # Determine parameters (simplified approach)
     p, d, q = 1, 1, 1  # Non-seasonal components
     P, D, Q, S = 1, 1, 1, 5  # Seasonal components (assuming weekly seasonality)

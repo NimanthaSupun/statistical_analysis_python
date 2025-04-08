@@ -23,7 +23,7 @@ def load_and_clean_data(file_path, is_time_series=False):
         return process_regular_data(df)
 
 def process_regular_data(df):
-    """Process non-time series data"""
+   
     # Handle missing values
     for col in df.columns:
         if df[col].isnull().sum() > 0:
@@ -38,8 +38,7 @@ def process_regular_data(df):
     return df
 
 def process_time_series_data(df):
-    """Process time series data specifically"""
-    # Create a copy to avoid SettingWithCopyWarning
+    
     df = df.copy()
     
     # Convert date to datetime with UTC=True to handle timezone warnings

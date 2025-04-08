@@ -8,13 +8,7 @@ import seaborn as sns
 import os
 
 def perform_linear_regression(data_path, output_dir="output"):
-    """
-    Perform linear regression analysis on student data.
-    
-    Args:
-        data_path (str): Path to the CSV file
-        output_dir (str): Directory to save output files
-    """
+   
     # Create output directory if it doesn't exist
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
@@ -27,6 +21,7 @@ def perform_linear_regression(data_path, output_dir="output"):
     print(f"Dataset has {df.shape[0]} rows and {df.shape[1]} columns")
     
     # Check for missing values in key columns
+    
     predictors = ['Midterm_Score', 'Assignments_Avg', 'Quizzes_Avg', 'Participation_Score']
     missing_counts = df[predictors + ['Final_Score']].isnull().sum()
     print("\nMissing values in key columns:")
@@ -38,10 +33,7 @@ def perform_linear_regression(data_path, output_dir="output"):
     df_clean = df.dropna(subset=['Final_Score'] + predictors)
     print(f"Rows after dropping missing values: {df_clean.shape[0]}")
     
-    # Or Option 2: Impute missing values
-    # df_clean = df.copy()
-    # for col in predictors:
-    #     df_clean[col] = df_clean[col].fillna(df_clean[col].median())
+  
     
     # Select dependent and independent variables
     y = df_clean['Final_Score']
