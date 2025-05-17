@@ -1,13 +1,24 @@
-# SAT Private
+# statistical-analysis
 
 A Python project for statistical analysis and SAT data processing.
+
+## Overview
+
+This project was created to streamline the analysis of SAT (Scholastic Assessment Test) data. The main purpose is to provide tools for importing, processing, and analyzing SAT datasets efficiently. The project enables users to perform various statistical analyses, visualize results, and gain insights from SAT scores and related metrics.
 
 ## Features
 
 - Data import and export
-- Statistical computations
-- Visualization tools
+- Statistical computations (mean, median, standard deviation, correlation, etc.)
+- Visualization tools (histograms, scatter plots, box plots)
 - Modular and extensible design
+
+## Types of Analysis
+
+- Descriptive statistics on SAT scores
+- Comparative analysis between different groups or years
+- Correlation analysis between SAT scores and other variables
+- Trend analysis and data visualization
 
 ## Installation
 
@@ -33,12 +44,6 @@ sat-private/
 ├── README.md
 └── requirements.txt
 ```
-
-## Contributing
-
-1. Fork the repository
-2. Create a new branch
-3. Submit a pull request
 
 ## License
 
