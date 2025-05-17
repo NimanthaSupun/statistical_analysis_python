@@ -2,9 +2,14 @@
 
 A Python project for statistical analysis and SAT data processing.
 
-## Overview
+## Features
 
-This project was created to streamline the analysis of SAT (Scholastic Assessment Test) data. The main purpose is to provide tools for importing, processing, and analyzing SAT datasets efficiently. The project enables users to perform various statistical analyses, visualize results, and gain insights from SAT scores and related metrics.
+- Data cleaning and preprocessing for tabular and time series data
+- Hypothesis testing (Mann-Whitney U, Chi-Square, Kruskal-Wallis)
+- Linear regression modeling with multicollinearity checks (VIF)
+- Time series analysis and forecasting (ARIMA, SARIMA)
+- Automated result and plot generation
+- Modular, extensible codebase
 
 ## Features
 
@@ -15,10 +20,10 @@ This project was created to streamline the analysis of SAT (Scholastic Assessmen
 
 ## Types of Analysis
 
-- Descriptive statistics on SAT scores
-- Comparative analysis between different groups or years
-- Correlation analysis between SAT scores and other variables
-- Trend analysis and data visualization
+- **Hypothesis Testing:** Explore relationships and differences in     student performance data.
+- **Linear Regression:** Identify and quantify predictors of student final scores.
+- **Time Series Analysis:** Decompose, model, and forecast stock prices.
+
 
 ## Installation
 
@@ -27,22 +32,36 @@ git clone https://github.com/yourusername/sat-private.git
 cd sat-private
 pip install -r requirements.txt
 ```
-
 ## Usage
 
-```bash
-python main.py
-```
+1. Place your datasets in the `Datasets/` directory:
+    - `Students_Grading_Dataset.csv`
+    - `apple_only.csv`
+2. Run the main script:
+    ```bash
+    python main.py
+    ```
+3. Results and plots will be saved in the `output/` directory.
 
 ## Project Structure
 
 ```
 sat-private/
-├── data/
-├── src/
-├── tests/
-├── README.md
-└── requirements.txt
+├── Data_Cleaning/
+│   └── preprocessing.py
+├── Regression/
+│   └── linear_regression.py
+├── Hypothesis/
+│   └── hypothesis_testing.py
+├── Time_Series/
+│   └── time_series_analysis.py
+├── Datasets/
+│   ├── Students_Grading_Dataset.csv
+│   └── apple_only.csv
+├── output/
+│   └── [results and plots]
+├── main.py
+└── README.md
 ```
 
 ## License
